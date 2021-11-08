@@ -10,14 +10,19 @@ sourceCompatibility = '1.8'
 
 repositories {
     mavenLocal()
+    maven {
+        url 'https://nexus.amplicode.com/repository/public/'
+    }
     mavenCentral()
 }
 
 dependencies {
     implementation 'com.amplicode.audit:amplicode-audit-starter:0.1.0-SNAPSHOT'
+
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    runtimeOnly 'org.hsqldb:hsqldb'
+
+    implementation 'org.liquibase:liquibase-core'
     runtimeOnly 'org.postgresql:postgresql'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
