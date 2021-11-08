@@ -1,0 +1,6 @@
+{
+  "name": "amplicode-audit-demo-r2-generation",
+  "devDependencies": {
+    "@amplicode/codegen": "^0.2.0"
+  }
+}
