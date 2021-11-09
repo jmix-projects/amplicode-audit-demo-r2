@@ -1,0 +1,89 @@
+# This file was generated based on "Jmix model". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+"Mutation root"
+type Mutation {
+    registerAction(userActionDto: UserActionInputDtoInput!): String
+}
+
+"Query root"
+type Query {
+    actionCount(dto: ActionIntervalInputDtoInput): Long!
+    actionList(dto: ActionIntervalInputDtoInput): [UserActionOutputDto]
+}
+
+type UserActionOutputDto {
+    actionDateTime: String
+    clientIp: String
+    componentId: String
+    componentType: String
+    id: String
+    username: String
+}
+
+"BigDecimal"
+scalar BigDecimal
+
+"BigInteger"
+scalar BigInteger
+
+"Byte"
+scalar Byte
+
+"Char"
+scalar Char
+
+"Date"
+scalar Date
+
+"DateTime"
+scalar DateTime
+
+"LocalDate"
+scalar LocalDate
+
+"LocalDateTime"
+scalar LocalDateTime
+
+"LocalTime"
+scalar LocalTime
+
+"Long"
+scalar Long
+
+"OffsetDateTime"
+scalar OffsetDateTime
+
+"OffsetTime"
+scalar OffsetTime
+
+"Short"
+scalar Short
+
+"Time"
+scalar Time
+
+"UUID"
+scalar UUID
+
+"Void"
+scalar Void
+
+input ActionIntervalInputDtoInput {
+    componentId: String
+    componentType: String
+    endTime: String
+    startTime: String
+    username: String
+}
+
+input UserActionInputDtoInput {
+    actionDateTime: String
+    clientIp: String
+    componentId: String
+    componentType: String
+}
