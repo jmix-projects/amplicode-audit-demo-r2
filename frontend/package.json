@@ -17,6 +17,7 @@
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.9",
+    "amplicode-audit": "^0.1.0-snapshot.1",
     "antd": "^4.16.12",
     "axios": "^0.21.1",
     "graphql": "^15.5.1",
@@ -59,6 +60,7 @@
   },
   "proxy": "http://localhost:8080",
   "devDependencies": {
+    "@amplicode/gql": "file:src/gql",
     "@graphql-codegen/cli": "^2.2.0",
     "@graphql-codegen/gql-tag-operations-preset": "^1.1.7",
     "@graphql-codegen/typescript": "^2.2.2",
